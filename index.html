@@ -1,14 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<header>
-<style>
-  body { background-image:url('unicorn.gif'); background-repeat:repeat; }
-</style>
-</header>
-<body>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+    <style>
+      html, body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background:white;
+      }
+    </style>
+  </head>
+  <body>
+  <script>
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+}
 
-<h1>This is a headline</h1>
-<p>This is a paragraph.</p>
+function draw() {
+  background(255);
+  textSize(70);
+  textAlign(CENTER);
+  fill(0);
+  text("test");
+}
 
-</body>
+  </script>
+  </body>
 </html>
